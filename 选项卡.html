@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xuanxiangka</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.clear{
+			clear: both;
+		}
+		.list li{
+			width: 80px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			list-style: none;
+			border: 1px solid #ededed;
+			background-color: #0f0;
+			cursor: pointer;
+			float: left;
+		}
+		.box{
+			width: 243px;
+			height: 200px;
+			border: 1px solid red;
+		}
+		.box2{
+			width: 100px;
+			height: 100px;
+			background-color: #00f;
+			/*display: none;*/
+		}
+		.box3{
+			width: 100px;
+			height: 100px;
+			background-color: #006781;
+			/*display: none;*/
+		}
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li>标签一</li>
+		<li>标签二</li>
+		<li>标签三</li>
+	</ul>
+	<div class="clear"></div>
+	<div class="box">
+		<div class="box1">
+			内容一
+		</div>
+		<div class="box2">
+			内容二
+		</div>
+		<div class="box3">
+			内容三
+		</div>
+	</div>
+		// <script type="text/javascript" src="script/jquery.js"></script>
+		// <script>
+		// 	$(".list li").click(function(){
+		// 	var ind = $(this).index();
+		// 	$(".box div").eq(ind).css("display","block").siblings().css("display","none")
+		// 	} )
+		// </script>
+</html>
