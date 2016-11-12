@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		.bigbox{
+			margin: 0;
+			padding: 0;
+		}
+		.bigbox{
+			width: 1050px;
+			height: 600px;
+			border: 1px solid red;
+		}
+		.list1{
+			width: 3000px;
+			margin: 0;
+			padding: 0;
+		}
+		.list1 li{
+			list-style: none;
+			float: left;
+		}
+		.list1 li img{
+			width: 600px;
+			height: 400px;
+			margin: 0;
+			padding: 0;
+			/*float: left;*/
+		}
+		.box{
+			width: 600px;
+			height: 400px;
+			border: 1px solid black;
+			margin: 0 auto;
+			margin-top: 100px;
+			overflow: hidden;
+		}
+		.bigbox .list2{
+			margin:  0 auto;
+			/*margin-left: 300px;*/
+		}
+		.bigbox .list2 li{
+			width: 15px;
+			height: 15px;
+			text-align: center;
+			line-height: 15px;
+			border: 1px solid #00f;
+			float: left;
+			list-style: none;
+
+		}
+	</style>
+</head>
+<body>
+	<!--  -->
+	<div class="bigbox">
+		<div class="box">
+			<ul class="list1">
+				<li><img id="img1" src="images/1.jpg" alt=""></li>
+				<li><img src="images/2.jpg" alt=""></li>
+				<li><img src="images/3.jpg" alt=""></li>
+				<li><img src="images/4.jpg" alt=""></li>
+				<li><img src="images/5.jpg" alt=""></li>
+		 	</ul>
+		</div>
+		<ul class="list2">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript">
+		$(".list2 li").click(function(){
+			var ind = $(this).index();
+			// alert(ind);
+			$(".list1").animate({
+				"margin-left":-600*ind,
+			},1000)
+		})
+	</script>
+</body>
+</html>
